@@ -1,12 +1,10 @@
 from django.http import HttpResponseRedirect
-from django.shortcuts import get_object_or_404, redirect
+from django.shortcuts import get_object_or_404
 from django.views.generic import RedirectView, CreateView, DetailView
 from django.views.generic.edit import FormMixin
 
 from magic.forms import MagicURLCreateForm
 from magic.models import MagicURL
-
-from django.views import View
 
 
 class MagicURLRedirectView(RedirectView):
@@ -18,7 +16,7 @@ class MagicURLRedirectView(RedirectView):
         return True
 
     def get_redirect_url(self, *args, **kwargs):
-        magic_url = MagicURL.objects.get(id_path=kwargs['id_path'])
+        magic_url = get_object_or_404(MagicURL, id_path=kwargs['id_path'])
         if not self._check_open_link_in_session():
             magic_url.add_count_open()
 
