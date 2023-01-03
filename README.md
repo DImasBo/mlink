@@ -11,3 +11,18 @@
 - install requirements: `pip intstall -r requirements.txt`
 - make migrations `python manage.py migrate`
 - run server `python manage.py runserver`
+
+## application
+
+creaet link. Main Page.
+![image](https://user-images.githubusercontent.com/52758126/210406281-00ee8155-b416-46fd-9942-689a85efc7fd.png)
+
+Detail about shorted link
+![image](https://user-images.githubusercontent.com/52758126/210407771-d31475b7-f911-4b48-881d-15e0de47f5c2.png)
+
+Link for redirect
+![image](https://user-images.githubusercontent.com/52758126/210408005-0251fb14-280c-4533-beca-b1294fbc2337.png)
+
+
+- we created link and then try create new link with the equal prev link we get prev so we see info about the link
+- the count open is not counted as the number of link opens. ount open is individual customer.
