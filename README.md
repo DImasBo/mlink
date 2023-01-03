@@ -25,4 +25,4 @@ Link for redirect
 
 
 - we created link and then try create new link with the equal prev link so we get prev link
-- the count open is not counted as the number of link opens. ount open is individual customer.
+- the count open is not counted as the number of link opens. count open is individual open link seperate customer.
