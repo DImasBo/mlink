@@ -1,0 +1,87 @@
+{% load i18n %}
+{% load static %}
+<!doctype html>
+{% get_current_language as LANGUAGE_CODE %}{% get_current_language_bidi as LANGUAGE_BIDI %}
+<html lang="{{ LANGUAGE_CODE|default:'en-us' }}" >
+    <head>
+        <meta charset="utf-8">
+        <title>
+        {% block title %}
+            {% translate "MLink" %}
+        {% endblock %}
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'admin/css/fonts.css' %}">
+        <link rel="icon" href="{% static 'magic/favicon.png' %}">
+        <link rel="stylesheet" href="{% static 'magic/style.css' %}">
+
+    </head>
+    <body>
+      <header>
+          <a class="logo" href="{% url 'index_create_link' %}" target="_blank" rel="noopener">
+            MLink
+          </a>
+      </header>
+      <main>
+
+        <svg  xml:space="preserve" viewBox="0 0 100 100" y="0" x="0" xmlns="http://www.w3.org/2000/svg" id="圖層_1" version="1.1"  xmlns:xlink="http://www.w3.org/1999/xlink" style="min-width:250px;min-height:250px;width:30%;height:30%;background-size:initial;background-repeat-y:initial;background-repeat-x:initial;background-position-y:initial;background-position-x:initial;background-origin:initial;background-image:initial;background-color:rgb(255, 255, 255);background-clip:initial;background-attachment:initial;animation-play-state:paused" ><g class="ldl-scale" style="transform-origin:50% 50%;transform:rotate(0deg) scale(0.8, 0.8);animation-play-state:paused" ><path d="M50 37.985v57.682" stroke-miterlimit="10" stroke-width="3.5" stroke="#333" fill="none" style="stroke:rgb(51, 51, 51);animation-play-state:paused" ></path>
+<path stroke-miterlimit="10" stroke-width="3.5" stroke="#333" stroke-linecap="round" fill="#f5e169" d="M50.563 29.036l3.466 8.78a.363.363 0 0 0 .443.214l9.026-2.764a.362.362 0 0 1 .42.527l-4.703 8.184a.363.363 0 0 0 .109.48l7.789 5.333a.362.362 0 0 1-.15.657l-9.331 1.426a.363.363 0 0 0-.307.385l.687 9.415a.363.363 0 0 1-.608.293l-6.933-6.407a.363.363 0 0 0-.492 0l-6.933 6.407a.363.363 0 0 1-.608-.293l.687-9.415a.363.363 0 0 0-.307-.385l-9.331-1.426a.362.362 0 0 1-.15-.657l7.789-5.333a.363.363 0 0 0 .11-.48l-4.703-8.184a.362.362 0 0 1 .42-.527l9.026 2.764a.362.362 0 0 0 .443-.214l3.466-8.78a.363.363 0 0 1 .675 0z" style="stroke:rgb(51, 51, 51);fill:rgb(245, 225, 105);animation-play-state:paused" ></path>
+<path d="M50.226 21.685v-9.128" stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#f8b26a" fill="none" style="stroke:rgb(248, 178, 106);animation-play-state:paused" ></path>
+<path d="M43.988 25.667l-2.134-7.964" stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#f8b26a" fill="none" style="stroke:rgb(248, 178, 106);animation-play-state:paused" ></path>
+<path d="M27.141 26.064l-2.884-2.883" stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#f8b26a" fill="none" style="stroke:rgb(248, 178, 106);animation-play-state:paused" ></path>
+<path d="M32.05 30.974l-4.909-4.91" stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#f8b26a" fill="none" style="stroke:rgb(248, 178, 106);animation-play-state:paused" ></path>
+<path d="M25.699 42.57l-7.12-1.908" stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#f8b26a" fill="none" style="stroke:rgb(248, 178, 106);animation-play-state:paused" ></path>
+<path d="M18.463 57.585l-3.939 1.056" stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#f8b26a" fill="none" style="stroke:rgb(248, 178, 106);animation-play-state:paused" ></path>
+<path d="M27.683 55.115l-9.22 2.47" stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#f8b26a" fill="none" style="stroke:rgb(248, 178, 106);animation-play-state:paused" ></path>
+<path d="M29.707 69.416l-2.883 2.883" stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#f8b26a" fill="none" style="stroke:rgb(248, 178, 106);animation-play-state:paused" ></path>
+<path d="M35.432 63.691l-5.725 5.725" stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#f8b26a" fill="none" style="stroke:rgb(248, 178, 106);animation-play-state:paused" ></path>
+<path d="M64.451 64.008l5.724 5.724" stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#f8b26a" fill="none" style="stroke:rgb(248, 178, 106);animation-play-state:paused" ></path>
+<path d="M73.772 55.915l3.91 1.047" stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#f8b26a" fill="none" style="stroke:rgb(248, 178, 106);animation-play-state:paused" ></path>
+<path d="M69.978 44.245l7.82-2.095" stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#f8b26a" fill="none" style="stroke:rgb(248, 178, 106);animation-play-state:paused" ></path>
+<path d="M67.313 32.443l6.062-6.062" stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#f8b26a" fill="none" style="stroke:rgb(248, 178, 106);animation-play-state:paused" ></path>
+<path d="M57.722 21.758l1.055-3.939" stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#f8b26a" fill="none" style="stroke:rgb(248, 178, 106);animation-play-state:paused" ></path>
+<path d="M56.317 26.999l1.405-5.241" stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#f8b26a" fill="none" style="stroke:rgb(248, 178, 106);animation-play-state:paused" ></path>
+<path d="M32.029 17.433l-4.913-8.509" stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#f8b26a" fill="none" style="stroke:rgb(248, 178, 106);animation-play-state:paused" ></path>
+<path d="M38.531 28.695l-6.502-11.262" stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#f8b26a" fill="none" style="stroke:rgb(248, 178, 106);animation-play-state:paused" ></path>
+<path d="M29.985 37.265l-11.278-6.511" stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#f8b26a" fill="none" style="stroke:rgb(248, 178, 106);animation-play-state:paused" ></path>
+<path d="M24.696 48.951H13.831" stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#f8b26a" fill="none" style="stroke:rgb(248, 178, 106);animation-play-state:paused" ></path>
+<path d="M34.357 58.113l-15.65 9.035" stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#f8b26a" fill="none" style="stroke:rgb(248, 178, 106);animation-play-state:paused" ></path>
+<path d="M38.331 69.553l-6.302 10.916" stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#f8b26a" fill="none" style="stroke:rgb(248, 178, 106);animation-play-state:paused" ></path>
+<path d="M62.809 70.747l5.614 9.722" stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#f8b26a" fill="none" style="stroke:rgb(248, 178, 106);animation-play-state:paused" ></path>
+<path d="M66.093 58.112l15.651 9.036" stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#f8b26a" fill="none" style="stroke:rgb(248, 178, 106);animation-play-state:paused" ></path>
+<path d="M75.481 48.951H86.62" stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#f8b26a" fill="none" style="stroke:rgb(248, 178, 106);animation-play-state:paused" ></path>
+<path d="M69.218 37.985l12.526-7.231" stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#f8b26a" fill="none" style="stroke:rgb(248, 178, 106);animation-play-state:paused" ></path>
+<path d="M68.423 17.433l4.912-8.509" stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#f8b26a" fill="none" style="stroke:rgb(248, 178, 106);animation-play-state:paused" ></path>
+<path d="M61.856 28.807l6.567-11.374" stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#f8b26a" fill="none" style="stroke:rgb(248, 178, 106);animation-play-state:paused" ></path>
+<circle stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#333" fill="#abbd81" r="4.741" cy="78.15" cx="79.011" style="stroke:rgb(51, 51, 51);fill:rgb(171, 189, 129);animation-play-state:paused" ></circle>
+<circle stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#333" fill="#a0c8d7" r="4.633" cy="19.584" cx="83.383" style="stroke:rgb(51, 51, 51);fill:rgb(160, 200, 215);animation-play-state:paused" ></circle>
+<circle stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#333" fill="#f47e60" r="4.09" cy="9.36" cx="39.831" style="stroke:rgb(51, 51, 51);fill:rgb(244, 126, 96);animation-play-state:paused" ></circle>
+<circle stroke-miterlimit="10" stroke-width="3.5" stroke-linecap="round" stroke="#333" fill="#c33737" r="4.951" cy="80.469" cx="19.287" style="stroke:rgb(51, 51, 51);fill:rgb(195, 55, 55);animation-play-state:paused" ></circle>
+<path stroke-miterlimit="10" stroke-width="3.5" stroke="#000" opacity=".2" stroke-linejoin="round" stroke-linecap="round" d="M67.114 49.79l-7.789-5.333a.362.362 0 0 1-.109-.48l4.703-8.185a.362.362 0 0 0-.42-.527l-9.026 2.764a.363.363 0 0 1-.443-.213l-2.22-5.623c.691 4.927.639 10.237-.296 15.676a52.644 52.644 0 0 1-2.109 8.22l.575-.531a.363.363 0 0 1 .492 0l6.933 6.407a.363.363 0 0 0 .608-.293l-.687-9.415a.363.363 0 0 1 .307-.385l9.331-1.426a.361.361 0 0 0 .15-.656z" style="animation-play-state:paused" ></path>
+</g><!-- generated by https://loading.io/ --></svg>
+        <h1>{% translate "Molfar Link" %}</h1>
+      {% block main %}
+          <form action="{% url 'index_create_link' %}" method="post">
+              {% csrf_token %}
+              <div class="field">
+                  {{ form.origin_url }}
+                  {% if form.origin_url.errors %}
+                        {% for error in form.origin_url.errors %}
+                            <p class="error"><strong>{{ error|escape }}</strong></p>
+                        {% endfor %}
+                    {% endif %}
+              </div>
+              <div class="field">
+                  <button>Shorten</button>
+              </div>
+          </form>
+        <p>By clicking SHORTEN</p>
+      {% endblock %}
+      </main>
+      <footer>
+          <p>
+            {% translate '©2022 mlink.org. All rights reserved.' %}
+          </p>
+      </footer>
+    </body>
+</html>

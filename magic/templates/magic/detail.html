@@ -1,0 +1,17 @@
+{% extends "magic/base.html" %}
+
+{% block title %}
+    {{ block.super }} | {{ object.id_path }}
+{% endblock %}
+
+
+
+{% block main %}
+        <p class="result">
+    <a href="{{ object.get_url_by_id_path }}" target="_blank">
+            {{ request.get_host }}{{ object.get_url_by_id_path }}
+    </a>
+    count open: {{ object.count_open }}
+        </p>
+    {{ block.super }}
+{% endblock %}
