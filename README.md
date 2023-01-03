@@ -24,5 +24,5 @@ Link for redirect
 ![image](https://user-images.githubusercontent.com/52758126/210408005-0251fb14-280c-4533-beca-b1294fbc2337.png)
 
 
-- we created link and then try create new link with the equal prev link we get prev so we see info about the link
+- we created link and then try create new link with the equal prev link so we get prev link
 - the count open is not counted as the number of link opens. ount open is individual customer.
